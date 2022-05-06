@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(87, 87, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.322);
+}
+section {
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+    margin: auto;
+    background-color: white;
+}
+main#msg {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 8px;
+}
+footer {
+    font-size: 1.5em;
+    font-weight: 500;
+}

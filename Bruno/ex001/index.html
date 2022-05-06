@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(190, 190, 190);
+            font: normal 25pt Arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Esse é o meu nome</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>.`)
+        var dinheiro = Number(window.prompt('Quantos reais você tem?'))
+        var dinform = dinheiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`Meu salário <strong>${dinform}</strong>.`)
+        document.write('Você vai ganhar um aumento de 10% no seu salário, com quanto você via ficar?')
+        var porcent = (dinheiro * 10) / 100
+        var aumento = dinheiro + porcent
+        document.write(`<br>Com o aumento de 10% no meu salário eu fiquei com <strong>${aumento.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}).replace('.', ',')}</strong>`)
+        var dif = aumento - dinheiro?`${(aumento - dinheiro).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`:'É igual'
+        document.write(`<br>A diferença do meu salário atual para o antigo é de <strong>${dif}</strong>`)
+    </script>
+</body>
+</html>
